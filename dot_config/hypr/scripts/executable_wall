@@ -1,0 +1,9 @@
+#!/home/josh/.nix-profile/bin/fish
+
+set wallpaper_folder "/home/josh/.config/hypr/wallpapers/"
+
+# Find all files in the directory and shuffle them
+set random_file (ls "$wallpaper_folder" | sort -R | head -n 1)
+
+# Use the adjusted cursor position in your command
+swww img "$wallpaper_folder""$random_file" -t grow --transition-pos center

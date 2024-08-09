@@ -1,0 +1,1 @@
+grimshot save area - | wl-copy --type image/png

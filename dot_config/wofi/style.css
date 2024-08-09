@@ -1,0 +1,62 @@
+@define-color highlight #526C96;
+@define-color base1 #1e1e2e;
+@define-color base2 #313244;
+@define-color base3 #45475a;
+@define-color text #cdd6f4;
+
+* {
+  font-family: "JetBrains Mono";
+  font-size: 18px;
+}
+
+window {
+  border: 1px solid @highlight;
+  border-radius: 1em;
+  background-color: @base2;
+}
+
+#input {
+  margin-bottom: 15px;
+  padding: 3px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+
+#inner-box {
+  background-color: @base1;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+#outer-box {
+  margin: 5px;
+  padding: 20px;
+  background-color: @base2;
+  border-radius: 5px;
+}
+
+#text {
+  padding: 5px;
+  color: @text;
+}
+
+/* #entry:nth-child(even) { */
+/*   background-color: @base1; */
+/* } */
+
+#entry:selected {
+  background-color: @highlight;
+}
+
+#entry {
+  border-radius: 7;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+#input:first-child> :nth-child(4) {
+  min-height: 1.25em;
+  min-width: 1.25em;
+  background-image: -gtk-icontheme('window-close-symbolic');
+}

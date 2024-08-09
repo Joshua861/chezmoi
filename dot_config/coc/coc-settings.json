@@ -1,0 +1,20 @@
+{
+  "languageserver": {
+    "svelte": {
+      "command": "svelteserver",
+      "filetypes": ["svelte"],
+      "rootPatterns": ["package.json"],
+      "initializationOptions": {
+        "config": {}
+      }
+    },
+    "postcss": {
+      "command": "postcss-language-server",
+      "filetypes": ["css", "postcss"],
+      "rootPatterns": ["package.json"],
+      "initializationOptions": {
+        "config": {}
+      }
+    }
+  }
+}
